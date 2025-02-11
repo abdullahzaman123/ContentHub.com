@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="Motor Race" class="action-bar">
+    </ActionBar>
+    
+    <GridLayout>
+        <AbsoluteLayout id="gameContainer" class="game-container">
+            <!-- Game elements will be added here dynamically -->
+            <Image id="player" src="~/assets/car.png" class="player" />
+        </AbsoluteLayout>
+        
+        <StackLayout horizontalAlignment="right" verticalAlignment="top" class="hud">
+            <Label id="scoreLabel" text="Score: 0" class="score" />
+            <Label id="speedLabel" text="Speed: 0" class="speed" />
+        </StackLayout>
+        
+        <GridLayout rows="auto" columns="*, *" verticalAlignment="bottom" class="controls">
+            <Button text="←" col="0" tap="{{ onLeftTap }}" class="control-btn" />
+            <Button text="→" col="1" tap="{{ onRightTap }}" class="control-btn" />
+        </GridLayout>
+    </GridLayout>
+</Page>

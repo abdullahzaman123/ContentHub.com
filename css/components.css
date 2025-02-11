@@ -1,0 +1,151 @@
+/* Upload Section Styles */
+.upload-section {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: 0.75rem;
+    padding: 3rem 2rem;
+    background-color: var(--surface-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: var(--primary-color);
+    background-color: #f8fafc;
+}
+
+.upload-area.drag-over {
+    border-color: var(--primary-color);
+    background-color: #eff6ff;
+}
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upload-icon {
+    width: 48px;
+    height: 48px;
+    stroke: var(--primary-color);
+    stroke-width: 1.5;
+}
+
+.upload-text {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.upload-hint {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Tools Section Styles */
+.tools-section {
+    background-color: var(--surface-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.tool-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tool-btn:hover {
+    background-color: #f8fafc;
+    border-color: var(--primary-color);
+}
+
+.tool-btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.tool-btn.primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.tool-icon {
+    font-size: 1.25rem;
+}
+
+.color-tool {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#bgColor {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* Preview Section Styles */
+.preview-section {
+    margin-top: 2rem;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.preview-card {
+    background-color: var(--surface-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.preview-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.preview-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.preview-container canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
